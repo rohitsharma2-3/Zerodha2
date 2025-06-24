@@ -9,7 +9,7 @@ const BuyForm = () => {
   const [price, setPrice] = useState(0);
 
   const handleBuy = async () => {
-      await axios.post('http://localhost:8000/newOrder', {
+      await axios.post('https://zerodha2-2.onrender.com/newOrder', {
         name: uid, 
         qty: quantity,
         price: price,
@@ -19,7 +19,7 @@ const BuyForm = () => {
   };
 
   const handleSell = async () => {
-      await axios.post('http://localhost:8000/newOrder', {
+      await axios.post('https://zerodha2-2.onrender.com/newOrder', {
         name: uid, 
         qty: quantity,
         price: price,
