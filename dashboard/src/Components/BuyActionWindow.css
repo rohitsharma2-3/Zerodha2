@@ -1,0 +1,45 @@
+
+.buy-form-container {
+  width: 700px;
+  height: 500px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  background-color: #fff;
+}
+
+.buy-form-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;     
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  width: 60px;
+}
+
+.form-row input {
+  width: 100%;
+  max-width: 200px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.margin-info {
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
