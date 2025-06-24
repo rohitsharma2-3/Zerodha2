@@ -15,13 +15,12 @@ const Navbar = () => {
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img
-            src="/media/images/logo.svg"
+            src="/media/Images/logo.svg"
             alt="logo"
             style={{ width: '120px' }}
           />
         </Link>
 
-        {/* Toggle button for mobile */}
         <button
           className="navbar-toggler"
           type="button"

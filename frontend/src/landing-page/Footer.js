@@ -3,13 +3,13 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className='border-top' style={{ backgroundColor: '#f9f9f9' }}>
-      <div className='container p-5'>
+      <div className='container p-lg-5'>
         <div className='row mx-1'>
-          <div className='col'>
-            <img src='media/images/logo.svg' alt='logo' style={{ width: '50%' }} />
+          <div className='col-12 col-lg'>
+            <img src='media/Images/logo.svg' alt='logo' style={{ width: '50%' }} />
             <p style={{ fontSize: '12px' }}>© 2010 - 2025, Zerodha Broking Ltd. All rights reserved.</p>
           </div>
-          <div className='col'>
+          <div className='col-12 col-lg'>
             <p><b>Account</b></p>
             <div className='d-flex flex-column '>
               <a href='' className='anchor'>Open demat account</a> <br></br>
@@ -22,7 +22,7 @@ const Footer = () => {
               <a href='' className='anchor'>Referral program</a> <br></br>
             </div>
           </div>
-          <div className='col'>
+          <div className='col-12 col-lg'>
             <p><b>Support</b></p>
             <div className='d-flex flex-column '>
               <a href='' className='anchor'>Contact us</a> <br></br>
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
 
           </div>
-          <div className='col'>
+          <div className='col-12 col-lg'>
             <p><b>Company</b></p>
             <div className='d-flex flex-column '>
               <a href="" className='anchor'>About</a> <br></br>
@@ -48,7 +48,7 @@ const Footer = () => {
               <a href="" className='anchor'>Open source </a> <br></br>
             </div>
           </div>
-          <div className='col'>
+          <div className='col-12 col-lg'>
             <p><b>Quick links</b></p>
             <div className='d-flex flex-column '>
               <a href="" className='anchor'> Upcoming IPOs</a> <br></br>

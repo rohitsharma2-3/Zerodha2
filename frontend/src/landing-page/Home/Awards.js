@@ -4,14 +4,14 @@ const Awards = () => {
   return (
     <div className='container mt-5'>
       <div className='row'>
-        <div className='col-6 p-5'>
-          <img src='media\Images\largestBroker.svg' alt='largest-broker' />
+        <div className='col-12 col-lg-6 p-lg-5'>
+          <img src='media\Images\largestBroker.svg' alt='largest-broker' style={{width: '100%'}} />
         </div>
-        <div className='col-6 p-5 mt-4'>
+        <div className='col-12 col-lg-6 p-lg-5 mt-4'>
           <h1>Largest stock broker in india</h1>
           <p>2+ million Zerodha clients contribute to over 15% of all retail order volumes in india daily by trading and investing in:</p>
           <div className='row mt-5 text-muted'>
-            <div className='col-6'>
+            <div className='col-12 col-lg-6'>
               <ul>
                 <li>
                   Futures and Options
@@ -24,7 +24,7 @@ const Awards = () => {
                 </li>
               </ul>
             </div>
-            <div className='col-6'>
+            <div className='col-12 col-lg-6'>
               <ul>
                 <li>
                   Stocks & IPOs

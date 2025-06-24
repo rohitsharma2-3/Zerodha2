@@ -1,0 +1,125 @@
+/* Base layout */
+.menu_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #fff;
+    position: relative;
+    border: 1px solid lightgray;
+}
+
+.list_container {
+    width: 520px;
+}
+/* Logo + toggle container */
+.logo_toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    z-index: 999; /* make sure it's on top */
+}
+/* Nav list container */
+.nav_list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Menu links */
+.list_container {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.list_container a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.list_container a.active {
+    color: #e60000;
+    font-weight: bold;
+}
+
+/* Divider between nav and logout */
+.divider {
+    width: 1px;
+    height: 25px;
+    background-color: gray;
+}
+
+/* Logout button */
+.logout_btn {
+    background: none;
+    border: none;
+    color: red;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        display: none;
+        /* width: 100%; */
+        background-color: #fff;
+        margin-top: 450px;
+        
+    }
+
+    .nav_list ul {
+        align-items: start;
+        padding: 1rem;
+    }
+
+    .nav_list.open {
+        display: flex;
+    }
+
+    .list_container {
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .logout_btn {
+        align-self: flex-start;
+    }
+}

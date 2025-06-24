@@ -26,9 +26,9 @@ const Holdings = () => {
   return (
     <>
       <div className='holding '>
-        <div>
+        <div className='table_holdings'>
           <h4>Holdings ({allHoldings.length})</h4>
-          <div className=' row border-bottom border-top mt-3 text-muted '>
+          <div className='  row border-bottom border-top mt-3 text-muted '>
             <div className='col-2' style={{ borderRight: '1px solid lightgray' }}>
               <p>Instruments</p>
             </div>

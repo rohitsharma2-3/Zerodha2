@@ -35,7 +35,7 @@ const WatchList = () => {
     return (
         <div>
             <div className='about_chart d-flex'>
-                <div className='first_line' style={{ fontSize: '15px' }}>
+                <div className='first_line ' style={{ fontSize: '15px' }}>
                     <p>Search e.g.: infy, bse, nifty fut weekly, gold mcx</p>
                     <p>{watchlist.length} / 50</p>
                 </div>

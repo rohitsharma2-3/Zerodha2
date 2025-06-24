@@ -45,7 +45,7 @@ const Orders = () => {
                             <div className='col-2'>
                                 <p>{el.mode}</p>
                             </div>
-                            <div className='col-1'>
+                            <div className='col-3 col-md-1'>
                                 <Link to={`/update/${el._id}`}><button className='btn'>Update</button></Link>
                             </div>
                         </div>

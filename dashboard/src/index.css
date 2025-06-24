@@ -75,7 +75,7 @@ code {
 .summary,
 .form_container {
   width: 60vw;
-  height: 130vh;
+  min-height: 130vh;
   padding: 2rem;
   margin-top: 76px;
   border-left: 1px solid lightgray;
@@ -121,14 +121,14 @@ code {
   width: 30%;
 }
 
-.userId{
+.userId {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
 }
 
-.user_icon{
+.user_icon {
   background-color: #ff7676;
   border-radius: 100%;
   padding: 2px 7px;
@@ -138,13 +138,13 @@ code {
   align-items: center;
 }
 
-.mouse_hover{
+.mouse_hover {
   position: relative;
   list-style: none;
   cursor: 'pointer';
 }
 
-.action{
+.action {
   position: absolute;
   top: 1px;
   right: 0;
@@ -154,6 +154,55 @@ code {
   gap: 10px;
 }
 
-.about_chart{
+.about_chart {
   margin-top: 80px;
+}
+
+@media (max-width: 991px) {
+  .topbar-container {
+    flex-direction: column;
+  }
+
+  .indices-container {
+    display: none;
+  }
+
+  .menu_container {
+    padding: 1rem 0rem;
+    width: 100%;
+  }
+
+  .about_page {
+    width: 100%;
+  }
+
+  .summary {
+    width: 100%;
+  }
+
+  .first_line {
+    padding-right: 1px;
+    font-size: smaller;
+  }
+
+  .fund,
+  .app,
+  .position,
+  .holding,
+  .update,
+  .orders,
+  .summary,
+  .form_container {
+    width: 100%;
+    min-height: 10vh;
+  }
+
+  .table_holdings{
+    width: 900px;
+    overflow-x: scroll;
+  }
+  .table_holdings::-webkit-scrollbar{
+    display: none;
+  }
+
 }

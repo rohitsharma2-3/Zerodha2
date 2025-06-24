@@ -2,9 +2,9 @@ import React from 'react'
 
 const Stats = () => {
   return (
-    <div className='container mt-5 p-5'>
+    <div className='container mt-5 p-2 p-lg-5'>
       <div className='row'>
-        <div className='col-5 p-4'>
+        <div className='col-12 col-lg-5 p-4'>
           <h1 className='mb-5'>Trust with confidence</h1>
           <h5>Customer-first always</h5>
           <p className='text-muted'>That's why 1.6+ crore customers trust Zerodha with ~ ₹6 lakh crores of equity investments and contribute to 15% of daily retail exchange volumes in India.</p>
@@ -19,11 +19,11 @@ const Stats = () => {
           <p className='text-muted'>With initiatives like <span className='text-primary'>Nudge</span> and <span className='text-primary'>Kill Switch</span>, we don't just facilitate transactions, but actively help you do better with your money.</p>
         </div>
         <div className='col-1 p-4'></div>
-        <div className='col-6'>
-          <img src='media/images/ecosystem.png' alt='ecosystem-img' style={{width: '100%'}} />
+        <div className='col-12 col-lg-6'>
+          <img src='media/Images/ecosystem.png' alt='ecosystem-img' style={{width: '100%'}} />
           <div className='text-center'>
-            <a href="" className='mx-3 text-decoration-none'>Explore our products →</a>
-            <a href="" className='text-decoration-none'>Try Kite demo →</a>
+            <a href="/" className='mx-3 text-decoration-none'>Explore our products →</a>
+            <a href="/" className='text-decoration-none'>Try Kite demo →</a>
           </div>
         </div>
       </div>

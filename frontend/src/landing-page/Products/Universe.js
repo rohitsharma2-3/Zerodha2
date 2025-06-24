@@ -11,15 +11,15 @@ const Universe = () => {
           <p className='mt-3'>Extend your trading and investment experience even further with our partner platform</p>
         </div>
         <div className='row text-center px-5'>
-          <div className='col-4 p-5 '>
+          <div className='col-12 col-lg-4 p-lg-5 '>
             <Box img={'media/Images/zerodhaFundhouse.png'} paragraph='Our asset management venture that is creating simple and transparent index funds to help you save for your goals.' />
             <Box img={'media/Images/streakLogo.png'} paragraph='Systematic trading platform that allows you to create and backtest strategies without coding.' />
           </div>
-          <div className='col-4 p-5'>
+          <div className='col-12 col-lg-4 p-lg-5'>
             <Box img={'media/Images/sensibullLogo.svg'} paragraph='Options trading platform that lets you create strategies, analyze positions, and examine data points like open interest, FII/DII, and more.' />
             <Box img={'media/Images/smallcaseLogo.png'} paragraph='Options trading platform that lets you create strategies, analyze positions, and examine data points like open interest, FII/DII, and more.' />
           </div>
-          <div className='col-4 p-5'>
+          <div className='col-12 col-lg-4 p-lg-5'>
             <Box img={'media/Images/zerodhaFundhouse.png'} paragraph='Investment research platformthat offers detailed insights on stocks,sectors, supply chains, and more.' />
             <Box img={'media/Images/dittoLogo.png'} paragraph='Investment research platformthat offers detailed insights on stocks,sectors, supply chains, and more.' />
 

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './TopComponent.css'; // ← Custom CSS here
 
 const TopComponent = () => {
     const [currSelected, setCurrSelected] = useState(0);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const menuItems = [
         { label: "Dashboard", path: "/" },
@@ -13,36 +15,53 @@ const TopComponent = () => {
         { label: "Chart", path: "/chats" },
     ];
 
-    return (
-        <div className="menu_container border">
-            <Link to={'/'}><img
-                src="https://tse2.mm.bing.net/th?id=OIP.WlMD0imFAaSYYRwwI2mcvAHaHa&pid=Api&P=0&h=180"
-                alt="img" style={{ width: '50px' }}
-            /></Link>
+    const handleLogout = () => {
+        localStorage.removeItem('auth-token');
+        window.location.href = `http://localhost:3000?logout=true`;
+    };
 
-            <div className="nav_list d-flex align-items-center gap-4">
-                <ul className="d-flex list-unstyled m-0 gap-4">
+    return (
+        <header className="menu_container">
+            {/* Logo and hamburger */}
+            <div className="logo_toggle">
+                <Link to="/">
+                    <img
+                        src="https://tse2.mm.bing.net/th?id=OIP.WlMD0imFAaSYYRwwI2mcvAHaHa&pid=Api&P=0&h=180"
+                        alt="Logo"
+                        className="logo"
+                    />
+                </Link>
+                <button className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    ☰
+                </button>
+            </div>
+
+            {/* Nav List */}
+            <nav className={`nav_list ${isMenuOpen ? 'open' : ''}`}>
+                <ul className="list_container">
                     {menuItems.map((item, idx) => (
                         <li key={idx}>
                             <Link
                                 to={item.path}
-                                onClick={() => setCurrSelected(idx)}
-                                className={`text-decoration-none ${currSelected === idx ? "text-danger fw-bold" : "text-black"}`}>
+                                onClick={() => {
+                                    setCurrSelected(idx);
+                                    setIsMenuOpen(false); 
+                                }}
+                                className={currSelected === idx ? 'active' : ''}
+                            >
                                 {item.label}
                             </Link>
                         </li>
                     ))}
                 </ul>
 
-                <div style={{ width: '1px', height: '25px', backgroundColor: 'gray' }}></div>
+                <div className="divider"></div>
 
-                <li className='list-unstyled'
-                    onClick={() => {
-                        localStorage.removeItem('auth-token');
-                        window.location.href = `http://localhost:3000?logout=true`;
-                    }}> Logout </li>
-            </div>
-        </div>
+                <button className="logout_btn" onClick={handleLogout}>
+                    Logout
+                </button>
+            </nav>
+        </header>
     );
 };
 

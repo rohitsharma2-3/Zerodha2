@@ -33,7 +33,7 @@ const Dashboard = () => {
 
 
     return (
-        <div className='d-flex'>
+        <div className='d-flex flex-column-reverse flex-lg-row'>
             <div className='about_page'>
                 <WatchList />
             </div>
