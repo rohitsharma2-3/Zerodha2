@@ -6,7 +6,7 @@ const App = () => {
   const [holdings, setHoldings] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:8000/allHoldings')
+    axios.get('https://zerodha2-2.onrender.com/allHoldings')
       .then((res) => {
         setHoldings(res.data)
       })
