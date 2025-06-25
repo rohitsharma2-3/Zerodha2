@@ -16,20 +16,15 @@ const Summary = () => {
     const pnlPercentage = ((totalPnL / totalInvestment) * 100).toFixed(2);
 
     useEffect(() => {
-        const storedUsername = localStorage.getItem('user');
-        if (storedUsername) {
-            setUsername(storedUsername);
-        }
         axios.get('https://zerodha2-2.onrender.com/allHoldings')
             .then((res) => {
                 setAllHoldings(res.data)
-                console.log(res.data)
             })
     }, [])
     return (
         <div className='summary  text-muted'>
             <div className='mt-5 '>
-                <h3>Hi, {username || "User"}</h3>
+                <h3>Hi, User!</h3>
                 <hr />
             </div>
              <div className='row mt-5 text-muted'>
