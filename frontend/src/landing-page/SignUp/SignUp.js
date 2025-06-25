@@ -25,7 +25,7 @@ const SignUp = () => {
 
   const loginFun = async () => {
     let respData;
-    await fetch('http://localhost:8000/login', {
+    await fetch('https://zerodha1-cm9e.onrender.com/login', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -47,7 +47,7 @@ const SignUp = () => {
 
   const signUpFun = async () => {
     let respData;
-    await fetch('http://localhost:8000/signup', {
+    await fetch('https://zerodha1-cm9e.onrender.com/signup', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
