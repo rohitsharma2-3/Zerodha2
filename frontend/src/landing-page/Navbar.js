@@ -49,7 +49,7 @@ const Navbar = () => {
                   onClick={() => {
                     const token = localStorage.getItem('auth-token');
                     const user = localStorage.getItem('username');
-                    window.location.href = `http://localhost:3001?token=${token}&user=${user}`;
+                    window.location.href = `https://zerodha1-cm9e.onrender.com?token=${token}&user=${user}`;
                   }}
                 >
                   Dashboard
