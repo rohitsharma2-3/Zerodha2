@@ -15,7 +15,11 @@ const jsonWebToken = require('jsonwebtoken')
 
 app.use(bodyParser.json())
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+    origin: 'https://zerodha2-2.onrender.com', 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true 
+}));
 
 const PORT = process.env.PORT || 8000
 const mongoDb = process.env.MONGO_URL
