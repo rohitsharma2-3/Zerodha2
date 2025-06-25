@@ -38,7 +38,6 @@ const SignUp = () => {
 
     if (respData.success) {
       localStorage.setItem('auth-token', respData.token)
-      localStorage.setItem('username', formData.username)
       window.location.replace('/')
     } else {
       alert(respData.error)
