@@ -17,7 +17,7 @@ const TopComponent = () => {
 
     const handleLogout = () => {
         localStorage.removeItem('auth-token');
-        window.location.href = `http://localhost:3000?logout=true`;
+        window.location.href = `https://zerodha2-2.onrender.com?logout=true`;
     };
 
     return (
