@@ -12,7 +12,7 @@ const Update = () => {
     });
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/orders/${id}`)
+        axios.get(`https://zerodha2-2.onrender.com/orders/${id}`)
             .then((res) => {
                 const { price, qty } = res.data;
                 setFormData({ price, qty });
@@ -25,7 +25,7 @@ const Update = () => {
 
     const handleDelete = async () => {
         try {
-            await axios.delete(`http://localhost:8000/orders/${id}`);
+            await axios.delete(`https://zerodha2-2.onrender.com/orders/${id}`);
             navigate('/orders');
         } catch (error) {
             console.error('Delete failed:', error);
@@ -41,7 +41,7 @@ const Update = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await axios.put(`http://localhost:8000/orders/${id}`, formData);
+        await axios.put(`https://zerodha2-2.onrender.com/orders/${id}`, formData);
         navigate('/orders');
     };
 
