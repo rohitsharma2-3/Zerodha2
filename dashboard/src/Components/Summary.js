@@ -20,7 +20,7 @@ const Summary = () => {
         if (storedUsername) {
             setUsername(storedUsername);
         }
-        axios.get('http://localhost:8000/allHoldings')
+        axios.get('https://zerodha2-2.onrender.com/allHoldings')
             .then((res) => {
                 setAllHoldings(res.data)
                 console.log(res.data)
