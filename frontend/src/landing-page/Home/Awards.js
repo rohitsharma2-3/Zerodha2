@@ -2,7 +2,7 @@ import React from 'react'
 
 const Awards = () => {
   return (
-    <div className='container mt-5'>
+    <div className='container mt-5 p-3'>
       <div className='row'>
         <div className='col-12 col-lg-6 p-lg-5'>
           <img src='media\Images\largestBroker.svg' alt='largest-broker' style={{width: '100%'}} />
