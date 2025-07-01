@@ -17,7 +17,7 @@ const Team = () => {
 
           <p>Currently pursuing IMSC-IT from Silver Oak University with a CGPA of 8.7 (graduating in 2025).</p>
 
-          <p>Connect on <span>GitHub</span>  / <span>LinkedIn</span>  / <span>Twitter</span> (update with your actual links)</p>
+          <p>Connect on <span>GitHub</span>  / <span>LinkedIn</span>  / <span>Twitter</span></p>
       </div>
     </div>
     </div >
